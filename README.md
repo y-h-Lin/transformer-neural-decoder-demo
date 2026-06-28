@@ -83,15 +83,3 @@ Because the available dataset may be small and animal-specific, a Transformer
 is not guaranteed to outperform the RNN. The useful research question is
 whether attention improves long-range temporal modeling or robustness under
 electrode pooling while retaining acceptable latency and sample efficiency.
-
-## Suggested message to the professor
-
-> I wondered whether it may be useful to add a lightweight causal Transformer
-> as an alternative to the current RNN decoder. Self-attention could provide a
-> complementary way to model longer-range dependencies in the pooled neural
-> sequence. I prepared a small runnable prototype that keeps the same
-> neural-sequence-to-position/velocity interface and includes a GRU baseline for
-> comparison. Since I do not have access to the experimental data, the current
-> example uses synthetic data only to verify the implementation. A meaningful
-> conclusion would require evaluation on the same animal/session splits and
-> preprocessing used in the paper.
